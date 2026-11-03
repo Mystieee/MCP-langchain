@@ -1,0 +1,25 @@
+[project]
+name = "mcp-langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mystieee", email = "soabmahira@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.8",
+    "langchain-community>=0.4.2",
+    "langchain-groq>=1.1.3",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchainhub>=0.1.21",
+    "langgraph>=1.2.19",
+    "mcp>=1.30.0",
+]
+
+[project.scripts]
+mcp-langchain = "mcp_langchain:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
